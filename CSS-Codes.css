@@ -1,0 +1,512 @@
+*{
+    box-sizing: border-box;
+}
+/* ----------------------- Selectors ---------------- */
+/* 1.Element Selector */
+h4{
+    background-color:aquamarine; 
+    color: black;
+    border: 2px solid lightsalmon;
+    border-radius: 15%;
+    text-align: center;
+}
+
+/* 2.Selector list */
+h3,h2{
+    background-color:lemonchiffon; 
+    color: black;
+} 
+
+/* 3.Universal Selector */
+*{
+    background-color:grey; 
+    color: black;
+    /* border: 2px solid pink; */
+}
+body{
+    background-color:grey; 
+    color: black;
+    border: 2px solid pink;
+    text-align: center;
+}
+
+/* 4.ID Selector */
+#H3Count{
+    background-color:cyan; 
+    color: black;
+}
+
+/* 5. Class Selector */
+.H3ClassCount{
+    background-color:black; 
+    color: pink;
+    border: 2px solid blue;
+}
+
+/* 6. Descendant selector */
+i b{
+    background-color:magenta; 
+    color: black;
+    border: 2px solid blue;
+    text-align: left;
+}
+
+/* 7. Direct Child selector */
+b > i{
+    background-color:palegreen; 
+    color: black;
+}
+
+/* To Make a Circle */
+h6{
+    background-color:black; 
+    color: pink;
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align: center;
+}
+
+/* ---------------- Box Model ------------------ */
+.h3BoxModel{
+    background-color:lightblue; 
+    color: black;
+    border: 5px solid darkmagenta;
+    /* padding: 10px; */ 
+           /* Or */
+    /* padding-left: 10px; */     
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    /* padding-right: 10px; */
+            /* Or */
+    padding : 10px 25px 20px 30px;
+    /* margin: 20px; */
+         /* Or */
+    /* margin-left: 10px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    /* margin-right: 10px; */
+          /* Or */
+    margin : 10px 25px 20px 30px;
+}
+.h3Box{
+      background-color: burlywood;
+      color: black;
+      border: 8px dotted chartreuse;
+      padding : 10px 25px 20px 30px;
+      /* padding: 0 0 0 30px; */
+      margin : 10px 25px 20px 30px;
+      /* margin : 0 0 0 30px; */
+}
+
+/* ------------- Display tags -------------------- */
+/* i. Block [div] */
+#Header1{
+    text-align: left;
+}
+.displayBlock1{
+    background-color: palevioletred;
+    color: black;
+    display: block;
+    text-align: left;
+}
+.displayBlock2{
+    background-color: beige;
+    color: black;
+    display: block;
+    text-align: left;
+}
+/* ii. Inline  */
+.displayInline1{
+    background-color: aquamarine;
+    color: black;
+    display: inline;
+    /* text-align: left; */
+}
+.displayInline2{
+    background-color: azure;
+    color: black;
+    display: inline;
+    /* text-align: left; */
+}
+/* iii. Inline-Block */
+.InlineBlock1{
+    background-color: brown;
+    color: aliceblue;
+    display: inline-block;
+    height: 50px;
+    width: 600px;
+    text-align: center;
+}
+.InlineBlock2{
+    background-color: chartreuse;
+    color: black;
+    display: inline-block;
+    text-align: left;
+}
+
+/* --------------------- Positions ---------------- */
+/* i. Static Position */
+.PositionStatic1{
+    background-color: chocolate;
+    color: yellow;
+    position: static;
+    text-align: left;
+    border: 5px solid palegoldenrod;
+}
+/* ii. Relative position */
+.PositionRalative1{
+    background-color: cornflowerblue;
+    color: black;
+    position: relative;
+    top: 25px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    text-align: left;
+    border: 5px solid yellowgreen;
+}
+/* iii. Fixed position */
+.PositionFixed1{
+    background-color: cadetblue;
+    color: black;
+    position: fixed;
+    top: 5px;
+    left: 25px;
+    /* right: 50px; */
+    /* bottom: 5px; */
+    text-align: left;
+    border: 5px solid wheat;
+}
+/* iv. Absolute position */
+#Parent{
+    position: relative;
+    height: 360px;
+    width: 360px;
+    border: 2px dashed chartreuse;
+}
+.PositionAbsolute1{
+    background-color: cornsilk;
+    color: black;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px; 
+    bottom: 15px;
+    text-align: left;
+    border: 5px solid crimson;
+}
+/* v. sticky Position */
+.PositionSticky1{
+    background-color: crimson;
+    color: black;
+    position: sticky;
+    top: 15px;
+    left: 15px;
+    /* right: 50px; */
+    /* bottom: 5px; */
+     text-align: left;
+    border: 5px solid wheat;
+} 
+
+/* ----------- CSS Pseudo Classes and Pseudo Elements ------------------- */
+/* i. Button */
+button:hover{
+    background-color: cyan;
+    color: black;
+    cursor: pointer;
+}
+
+button:active{
+    border: 5px solid salmon;
+}
+
+button:focus{
+    background-color: darkblue;
+    color: white; 
+}
+/* ii. Anchor Tag  */
+a:link{
+    color: yellow;
+}
+
+a:visited{
+    color: cyan;
+}
+
+/* ---------- Pseudo Classes -------- */
+.child1{
+    padding: 10px;
+    margin:10px;
+    background-color: darkcyan;
+}
+/* i. First-child class */
+span:first-child{
+    background-color: darkgoldenrod;
+}
+/* ii. Last-child class */
+span:last-child{
+    background-color: darkgreen;
+}
+/* iii. Nth-child class */
+span:Nth-child(5){
+    background-color: darkkhaki;
+}
+/* iv. Nth-child class for even */
+span:Nth-child(even){
+    background-color: darkmagenta;
+}
+/* v. Nth-child class for odd */
+/* span:Nth-child(odd){
+    background-color: darkolivegreen;
+} */
+
+/* ---------- Pseudo Elements -------- */
+/* i. Content  */
+/* Pseudo Elements :: Before */
+.h3tags::before{
+    content: "Hello";
+    background-color: darkolivegreen;
+}
+/* Pseudo Elements :: After */
+.h3tags::after{
+    content: "Gud Morning";
+    background-color: darkorange;
+}
+/* ii. Shapes */
+/* Pseudo Elements :: Before */
+.shape{
+    background-color: darkorchid;
+    margin:100px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    position: relative;
+}
+.shape::before{
+    content: " ";
+    background-color: darkred;
+    height: 25px;
+    width: 25px;
+    border: 2px solid yellowgreen;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:10px;
+}
+/* Pseudo Elements :: After */
+.shapes{
+    background-color: darkred;
+    margin:100px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    position: relative;
+}
+.shapes::after{
+    content: " ";
+    background-color: darksalmon;
+    height: 25px;
+    width: 25px;
+    border: 2px solid lemonchiffon;
+    border-radius: 50%;
+    position: absolute;
+    bottom:0;
+    right:10px;
+}
+
+/* ------- Css Flex Box ------- */
+.parent{
+    height: 1000px;
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    gap:10px;
+   /* justify-content: baseline;
+   justify-content: first baseline;
+   justify-content: last baseline; */
+    justify-content: center;
+   /* justify-content: left; */
+   /* justify-content: right; */
+   /* justify-content: flex-start; */
+   /* justify-content: flex-end; */
+   /* justify-content: safe; */
+   /* justify-content: space-around; */
+   /* justify-content: space-between; */
+   /* justify-content: space-evenly; */
+   /* justify-content: start; */
+   /* justify-content: end; */
+   /* justify-content: stretch; */
+   align-items: center;
+   flex-wrap: wrap;
+}
+.child{
+    /* height: 150px; */
+    width: 150px;
+    background-color:darkslateblue ;
+    border: 2px dotted yellow;
+    color: aqua;
+    flex: 1;
+}
+.demoDiv{
+    height: 150px;
+    width: 150px;
+    background-color: darkslategray;
+    color: aqua;
+    border: 2px dotted yellow;
+    flex: 2;
+}
+
+/* ------ Transition effects in Animations ------- */
+button{
+    background-color: darkslategrey;
+    color: aquamarine;
+    padding: 20px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* ---- Transition properties ---- */
+    transition-delay: 1000ms;
+    transition-duration: 300ms;
+    /* transition-property: all; */
+    transition-property: background-color;
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: linear; */
+    transition-timing-function:cubic-bezier(0.95,-0.07, 0.95,-0.08);
+    /* transition: all cubic-bezier(0.95,-0.07, 0.95,-0.08) 1000ms 300ms; */
+}
+button:hover{
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+/* ------- Movements in Animation ------- */
+.Box{
+     background-color: darkturquoise;
+     height : 600px;
+     width: 800px;
+}
+.Ball{
+     height: 100px;
+     width: 100px;
+     border-radius: 50%;
+     background-color: darkviolet;
+}
+.Ball:hover{
+    animation: moveTheBall 10s ease-in forwards ;
+}
+@keyframes moveTheBall {
+    25%{
+        transform: translate(500% , 0);
+        background-color: deeppink;
+        border-radius: 25%;
+    }
+    50%{
+        transform: translate(500% , 500%);
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    75%{
+        transform: translate(0 , -500%); 
+        background-color: orange;
+        border-radius: 25%;
+    }
+    100%{
+        transform: translate(0 , 0%);
+        background-color: maroon;
+        border-radius: 100%;
+    }
+}
+
+/* ------ Media Queries ------- */
+/* ------- i. Using single tag ------*/
+/* Using Min - width  */
+@media only screen and (min-width: 200px) {
+    .Mikky {
+      background-color: deepskyblue;
+      color: deeppink;
+      margin: 20px;
+    }
+  }
+@media only screen and (min-width: 400px) {
+    .Mikky {
+      background-color: magenta;
+      color: black;
+      margin: 20px;
+    }
+  }
+/* Using Max-width */
+  @media only screen and (max-width: 800px) {
+    .Minni {
+      background-color: dimgray;
+      color: black;
+      margin: 20px;
+    }
+  }
+@media only screen and (max-width: 400px) {
+    .Minni {
+      background-color: dodgerblue;
+      color: black;
+      margin: 20px;
+    }
+  }
+/* ------- ii. Using multiple tags ------*/
+/* ------ Max-width ------ */
+@media only screen and (max-width: 800px) {
+    .head3 {
+      background-color: deepskyblue;
+      color: deeppink;
+      margin: 20px;
+    }
+    p {
+      background-color: plum;
+      color: red;
+      margin: 20px;
+    }
+  }
+@media only screen and (max-width: 400px) {
+    .head3 {
+      background-color: purple;
+      color: red;
+      margin: 20px;
+    }
+    p {
+      background-color: magenta;
+      color: black;
+      margin: 20px;
+    }
+  }
+/*  ----- Min width ------ */
+@media only screen and (min-width: 400px) {
+    .heads3 {
+      background-color: yellow;
+      color: deeppink;
+      margin: 20px;
+    }
+    .hea3 {
+      background-color: black;
+      color: yellowgreen;
+      margin: 20px;
+    }
+  }
+@media only screen and (min-width: 200px) {
+    .heads3 {
+      background-color: darkorchid;
+      color: deeppink;
+      margin: 20px;
+    }
+    .hea3 {
+      background-color: palegreen;
+      color: black;
+      margin: 20px;
+    }
+  }

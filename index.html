@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS Codes </title>
+        <style>
+            h5{
+                background-color:plum; 
+                color: black; 
+                border: 2px solid yellow; 
+                border-radius: 15%; 
+                text-align: left;
+            }
+        </style>
+        <link rel="stylesheet" href="CSS-Codes.css"/>
+    </head>
+    <body>
+        <center><h1> Inline Css </h1></center>
+
+        <p style="background-color:pink; color: black; border: 2px solid blue; border-radius: 15%; 
+        text-align: left;"> In Inline css we write the attributes on the same line </p>
+        <hr><hr>
+        <center><h1> Internal Css </h1></center>
+
+        <h5> In Internal Css we write the attributes or style inside the html file . The code is written in the head
+             of the html part </h5>
+        <hr><hr>
+        <center><h1> External Css </h1></center>
+
+        <h4> In External Css we write the attributes or style outside the html file . The code is written in the 
+             another css file and that css file is linked to the html file using "link tag" and the attribute we use
+             in the link tag are :-<br>
+             i. "rel" which specifies that what kind of the relation does the css file hold for that html file <br>
+             ii. "href" which specifies the filename and the extension  </h4>
+        <hr><hr>
+        <center><h1> CSS Selectors </h1></center>
+
+               <h2> Welcome to the world of  Styling </h2>
+               <h3> 1. Universal Tag : It select's the entire content in the html tag.<br>
+                    Universal selector uses " * " symbol to style the data <br>
+                    When we add Border attribute in csss file <br>
+                    In Universal Selector , the boarder is applied for each tag present in the html file
+               </h3>  
+               <h3> 2. Element Selector : It select the elements or tags from the html file and styles it 
+                    accordingly using Css file.<br>
+                    Elementor selector uses elements like h1-h6 , body , p ,...etc<br>
+                    When we add Border attribute in csss file <br>
+                    In Body or Element Selector , the boarder is applied only onces [Outline of the page]
+               </h3>  
+               <h3> 3. Selector List : It selects multiple tags and styles them <br>
+                    Selector list uses " , " symbol to different elements or add element 
+               </h3>  
+               <h3 id="H3Count"> 4. ID Selector : It is the unique identification name given to the particular 
+                    tag in html File<br>
+                    ID Selector uses " # " symbol to style the data in css file <br>
+                    id="idname" is the attribute to give a unique name to that particular tag.
+               </h3>  
+               <h3 class="H3ClassCount"> 5. Class Selector : It is the used to select multiple tags and give a 
+                    name to those tag in html File <br>
+                    Class Selector uses " . " symbol to style the data in css file <br>
+                    class="classname" is the attribute to give a name to those tags. 
+               </h3> 
+               <h3> 6. Descandant Selector : It selects the elements that are located somewhere under other
+                    elements <br>
+                    It follows the syntax that parent any_child [which means that any parent of that 
+                    particular child ] <br>
+                    Example :- <br>
+                    <i> Here bold is enclose in h3<br>
+                        <u> here italic is enclosed in bold and h3<br>
+                            <b> here underline is enclose with in italic , bold  and h3 </b>
+                        </u>
+                    </i>
+                </h3> 
+                <h3> 7. Direct child Selector : It specifies the parent of that particular child <br>
+                     It uses " > " symbol to specify the direct child selector in css file <br>
+                     It follows the syntax that parent > direct child [which means that direct child is that 
+                     own child or particular child of that parent] <br>
+                     Example :- <br>
+                    <b> Here bold is enclose in h3<br>
+                        <i> here italic is enclosed in bold and h3<br>
+                            <u> here underline is enclose with in italic , bold  and h3 </u>
+                        </i>
+                    </b>
+                </h3>
+               <p class="H3ClassCount"> Class Selector : It is the used to select multiple tags and give a 
+                   name to those tag in html File <br>
+                   Class Selector uses " . " symbol to style the data in css file <br>
+                   class="classname" is the attribute to give a name to those tags. 
+               </p>
+               <h6> <br><br><br> Hello world </h6>
+        <hr><hr>
+        <center><h1> Box Model </h1></center>
+
+        <h3 class="h3BoxModel">
+            Specificity: Child selectors are more specific than descendant selectors because they only target 
+            direct children.<br> 
+            Scope: Descendant selectors have a broader scope, affecting all matching descendants. 
+            Child selectors narrow the scope to direct children only.
+        </h3>
+        <h3 class="h3Box">
+            Padding : It is used to give the space between the text and the border.<br>
+            Padding is also known as Internal Spacing <br>
+            Padding follows clockwise direction.<br>
+            syntax :- top right bottom left <br><br>
+
+            Margin : It is used to give the space between the border and the screen.<br>
+            Margin also known as External Spacing <br>
+            Margin also follows clockwise direction.<br>
+            syntax :- top right bottom left <br>
+        </h3>
+        <hr><hr>
+        <center><h1> Display </h1></center>
+        <h1 id="Header1">  i. Block </h1>
+            <div>
+                <div class="displayBlock1"> Block scope takes the entire width of the screen </div>
+                <div class="displayBlock2"> Blcok scope takes only the height of the text </div>
+            </div>
+        <hr>
+        <h1 id="Header1"> ii. Inline </h1>
+        <div>
+            <div class="displayInline1"> Inline scope takes what space is required </div><br>
+            <div class="displayInline2"> Inline scope doesnt waste the ui space </div>
+        </div>
+        <hr>
+        <h1 id="Header1"> iii. Inline-Block </h1>
+        <div>
+            <div class="InlineBlock1"> Inline-block scope is a combination of both Inline and Block </div><br>
+            <div class="InlineBlock2"> Inline-blocks scope takes the height and width accordingly as block but by 
+                default it take Inline </div>
+        </div>
+        <hr><hr>
+        <center><h1> Positions </h1></center>
+        <h1 id="Header1"> i. Satic Position </h1>
+
+        <h3 class="PositionStatic1">
+               Position Static in css give a default setting 
+        </h3>
+        <hr>
+        <h1 id="Header1"> ii. Relative Position </h1>
+
+        <h3 class="PositionRalative1">
+               Position Realtive in css change the positions accordingly with the offset values. 
+               They get collide accordingly.
+        </h3>
+        <p> Hey you are over me [colliding] </p>
+        <hr>
+        <h1 id="Header1"> iii. Fixed Position </h1>
+
+        <h3 class="PositionFixed1">
+            Position Fixed  in css give a fixes the position and set content moves accordingly 
+        </h3>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+
+        <hr>
+        <h1 id="Header1"> iv. Absolute Position </h1>
+        <div id="Parent">
+        <h3 class="PositionAbsolute1">
+            Position Absolute in css follows certain conditions<br>
+            > It should always have a parent and the parent should be of position relative<br>
+            > The offsets values are with respect to the parent not with respect to the entire UI.<br>
+            > If we don’t have any parent for position : absolute then by default it considers the body as 
+            the parent and body exactly acts as a relative in nature
+        </h3>
+        </div>
+        <hr>
+        <h1 id="Header1"> v. Sticky Position </h1>
+        
+        <h3 class="PositionSticky1">
+            Position Sticky in css give a fixes the position when it reaches to the extrem offset position.
+        </h3>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <p> Hey the content is getting scrolled and it is getting collide </p>
+        <hr><hr>
+        <center><h1> Css Pseudo Classes </h1></center>
+        <h1 id="Header1"> i. Button </h1>
+
+        <button>
+            Click here 
+        </button>
+        <hr>
+        <h1 id="Header1"> ii. Anchor Tag </h1>
+
+        <a href="https://www.instagram.com/" target="_blank"> Click here to open Instagram </a>
+        <hr>
+        <h1 id="Header1"> iii. Logos </h1>
+
+        <h1> Hey cham &#128151;</h1>
+        <a href="https://www.w3schools.com/html/html_emojis.asp" target="_blank"> Click here to open Emojis Page &#128525 </a><br><br>
+        <a href="https://www.w3schools.com/html/html_symbols.asp" target="_blank"> Click here to open Symbols Page &#9827 </a>
+        <hr>
+        <center><h1> Classes </h1></center>
+         
+        <div class="parent1">
+            <span class="child1"> Hey Charm </span>
+            <span class="child1"> Hey Charm </span>
+            <span class="child1"> Hey Charm </span>
+            <span class="child1"> Hey Charm </span>
+            <span class="child1"> Hey Charm </span>
+            <span class="child1"> Hey Charm </span>
+            <span class="child1"> Hey Charm </span>
+            <span class="child1"> Hey Charm </span>
+            <span class="child1"> Hey Charm </span>
+        </div><br/>
+        <hr><hr>
+        <center><h1> Css Pseudo Elements </h1></center>
+        <h1 id="Header1"> i.Displaying the content </h1>
+
+        <h3 class="h3tags">
+                Client 
+        </h3>
+        <hr>
+        <h1 id="Header1"> ii.Creating a circle </h1>
+
+        <div class="shape"></div>
+        <div class="shapes"></div>
+        <hr><hr>
+        <center><h1> Flex Box </h1></center>
+
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+            <div class="child">6</div>
+            <div class="demoDiv">7</div>
+        </div><br>
+        <hr><hr>
+        <center><h1> Animations </h1></center>
+        <h1 id="Header1"> i. Transition Effects in Animation </h1>
+
+        <button> Click Me </button><br><br>
+        <hr>
+        <h1 id="Header1"> ii. Moments in Animation </h1>
+        <div class="Box">
+            <div class="Ball"></div>
+        </div><br>
+        <hr><hr>
+        <center><h1> Media Queries </h1></center>
+        <center><h1> < ------ Using Single Tag ------ > </h1></center>
+        <h1 id="Header1"> i. Min-Width </h1>
+
+        <h3 class="Mikky">
+            Something that's random is lacking in order, plan, or purpose. It happens totally by chance, like the random picking of 
+            lottery numbers or unplanned random acts of kindness. Sometime in the 1980s, teenage slang hijacked the adjective random 
+            and tried to turn it into a word meaning weird, odd or out of place.
+        </h3>
+        <hr>
+        <h1 id="Header1"> ii. Max-Width </h1>
+        <h3 class="Minni">
+            Something that's random is lacking in order, plan, or purpose. It happens totally by chance, like the random picking of 
+            lottery numbers or unplanned random acts of kindness. Sometime in the 1980s, teenage slang hijacked the adjective random 
+            and tried to turn it into a word meaning weird, odd or out of place.
+        </h3>
+        <hr><hr>
+        <center><h1> < ------ Using Multiple Tags ------ > </h1></center>
+        <h1 id="Header1"> i. Min-Width </h1>
+
+        <h3 class="heads3">
+            Something that's random is lacking in order, plan, or purpose. It happens totally by chance, like the random picking of 
+            lottery numbers or unplanned random acts of kindness. </h3>
+        <h3 class="hea3">
+            Sometime in the 1980s, teenage slang hijacked the adjective random 
+            and tried to turn it into a word meaning weird, odd or out of place.
+        </h3>
+        <hr>
+        <h1 id="Header1"> ii. Max-Width </h1>
+
+        <h3 class="head3">
+            Something that's random is lacking in order, plan, or purpose. It happens totally by chance, like the random picking of 
+            lottery numbers or unplanned random acts of kindness. </h3>
+        <p>
+            Sometime in the 1980s, teenage slang hijacked the adjective random 
+            and tried to turn it into a word meaning weird, odd or out of place.
+        </p>
+        <hr><hr>
+    </body>
+</html>
